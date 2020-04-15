@@ -13,8 +13,11 @@ struct NewGoal: View {
     @State private var goalname: String = ""
     @State private var goalsub: String = ""
     @State private var goalDate = Date()
-    let formatter = DateFormatter()
-
+    var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        return formatter
+    }
     @FetchRequest(entity: Goal.entity(), sortDescriptors: []) var goals : FetchedResults<Goal>
     @Environment(\.managedObjectContext) var moc
     
@@ -87,9 +90,10 @@ struct NewGoal: View {
                     goal.completed = false
                     goal.subtitle = self.goalsub
                     goal.finishBy = self.goalDate
+                    goal.isCurrDay = Calendar.current.isDateInToday(self.goalDate)
+
                     
-                    
-                    print(self.formatter.string(from: self.goalDate))
+                    print(self.dateFormatter.string(from: goal.finishBy!))
                     try? self.moc.save()
                     
                     self.mode.wrappedValue.dismiss()
