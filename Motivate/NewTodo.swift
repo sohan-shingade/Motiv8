@@ -57,6 +57,7 @@ struct NewTodo: View {
                 todo.title = self.todoname
                 todo.completed = false
                 todo.subtitle = self.todosub
+                todo.createdOn = Date()
                 try? self.moc.save()
                 
                 self.mode.wrappedValue.dismiss()

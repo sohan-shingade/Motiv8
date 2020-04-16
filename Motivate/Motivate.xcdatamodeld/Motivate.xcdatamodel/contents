@@ -9,11 +9,12 @@
     </entity>
     <entity name="Todo" representedClassName="Todo" syncable="YES" codeGenerationType="class">
         <attribute name="completed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="createdOn" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="subtitle" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
     <elements>
         <element name="Goal" positionX="-54" positionY="18" width="128" height="118"/>
-        <element name="Todo" positionX="-27" positionY="72" width="128" height="88"/>
+        <element name="Todo" positionX="-27" positionY="72" width="128" height="103"/>
     </elements>
 </model>
