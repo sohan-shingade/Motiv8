@@ -15,7 +15,9 @@
 		1F6A89C42443F38100520070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A89C32443F38100520070 /* Assets.xcassets */; };
 		1F6A89C72443F38100520070 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A89C62443F38100520070 /* Preview Assets.xcassets */; };
 		1F6A89CA2443F38100520070 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A89C82443F38100520070 /* LaunchScreen.storyboard */; };
+		1F762BCA24493AEE00272311 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F762BC924493AEE00272311 /* Utilities.swift */; };
 		1FBB08AC244437E500D8DBD2 /* NewTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB08AB244437E500D8DBD2 /* NewTodo.swift */; };
+		1FC96D9C2448F58B0032A2A8 /* KeyboardGuardian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC96D9B2448F58B0032A2A8 /* KeyboardGuardian.swift */; };
 		1FD790EC2446444900B366F4 /* NewGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD790EB2446444900B366F4 /* NewGoal.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +32,9 @@
 		1F6A89C62443F38100520070 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1F6A89C92443F38100520070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F6A89CB2443F38100520070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F762BC924493AEE00272311 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		1FBB08AB244437E500D8DBD2 /* NewTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodo.swift; sourceTree = "<group>"; };
+		1FC96D9B2448F58B0032A2A8 /* KeyboardGuardian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardGuardian.swift; sourceTree = "<group>"; };
 		1FD790EB2446444900B366F4 /* NewGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGoal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +73,8 @@
 				1F6A89C12443F37E00520070 /* ContentView.swift */,
 				1FBB08AB244437E500D8DBD2 /* NewTodo.swift */,
 				1FD790EB2446444900B366F4 /* NewGoal.swift */,
+				1FC96D9B2448F58B0032A2A8 /* KeyboardGuardian.swift */,
+				1F762BC924493AEE00272311 /* Utilities.swift */,
 				1F6A89C32443F38100520070 /* Assets.xcassets */,
 				1F6A89C82443F38100520070 /* LaunchScreen.storyboard */,
 				1F5C35862446301B00F15A5A /* target.png */,
@@ -164,6 +170,8 @@
 				1F6A89BB2443F37E00520070 /* AppDelegate.swift in Sources */,
 				1FD790EC2446444900B366F4 /* NewGoal.swift in Sources */,
 				1F6A89C22443F37E00520070 /* ContentView.swift in Sources */,
+				1FC96D9C2448F58B0032A2A8 /* KeyboardGuardian.swift in Sources */,
+				1F762BCA24493AEE00272311 /* Utilities.swift in Sources */,
 				1F6A89BD2443F37E00520070 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,8 +21,11 @@ struct NewGoal: View {
     @FetchRequest(entity: Goal.entity(), sortDescriptors: []) var goals : FetchedResults<Goal>
     @Environment(\.managedObjectContext) var moc
     
+    @ObservedObject private var kGuardian = KeyboardGuardian(textFieldCount: 1)
+    
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     var body: some View {
+        ScrollView {
         VStack{
             
             VStack {
@@ -30,9 +33,7 @@ struct NewGoal: View {
                     .font(Font.custom("Futura", size: 60))
                     .frame(maxWidth: .infinity, alignment: .topLeading)
                     .padding()
-            }
-            Spacer()
-                .frame(height: 10)
+            }.padding(.top, 5)
             
             VStack {
                 Text("Name your goal:")
@@ -104,8 +105,8 @@ struct NewGoal: View {
                         .foregroundColor(Color.green)
                     
                 }
-            }
-
+            }.padding(.bottom, 20)
+        }
         }
     }
 }
